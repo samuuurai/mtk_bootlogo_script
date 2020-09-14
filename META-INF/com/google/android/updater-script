@@ -1,0 +1,6 @@
+ui_print("Flashing logo...");
+show_progress(0.200000, 0);
+package_extract_file("logo.bin", "/dev/block/platform/bootdevice/by-name/logo");
+ui_print("Flashed!");
+ui_print("");
+ui_print("You can reboot now!");

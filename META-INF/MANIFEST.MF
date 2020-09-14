@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: logo.bin
+SHA1-Digest: PoawPHjKHs5PuMYi0ylP3Fh9SF0=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: VtwxcA2Ds1s/fX/cn4hoCEQ8TNs=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: evpQZxxI+Xyqg8nf29FXd/YvBbc=
+

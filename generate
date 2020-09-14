@@ -1,0 +1,99 @@
+#!/bin/bash
+
+p=images
+f=fhdplus
+./tool/bmp_to_raw ./temp0.raw ./$p/"${f}_uboot".bmp
+./tool/bmp_to_raw ./temp1.raw ./$p/"${f}_battery".bmp
+./tool/bmp_to_raw ./temp2.raw ./$p/"${f}_low_battery".bmp
+./tool/bmp_to_raw ./temp3.raw ./$p/"${f}_charger_ov".bmp
+./tool/bmp_to_raw ./temp4.raw ./$p/"${f}_num_0".bmp
+./tool/bmp_to_raw ./temp5.raw ./$p/"${f}_num_1".bmp
+./tool/bmp_to_raw ./temp6.raw ./$p/"${f}_num_2".bmp
+./tool/bmp_to_raw ./temp7.raw ./$p/"${f}_num_3".bmp
+./tool/bmp_to_raw ./temp8.raw ./$p/"${f}_num_4".bmp
+./tool/bmp_to_raw ./temp9.raw ./$p/"${f}_num_5".bmp
+./tool/bmp_to_raw ./temp10.raw ./$p/"${f}_num_6".bmp
+./tool/bmp_to_raw ./temp11.raw ./$p/"${f}_num_7".bmp
+./tool/bmp_to_raw ./temp12.raw ./$p/"${f}_num_8".bmp
+./tool/bmp_to_raw ./temp13.raw ./$p/"${f}_num_9".bmp
+./tool/bmp_to_raw ./temp14.raw ./$p/"${f}_num_percent".bmp
+./tool/bmp_to_raw ./temp15.raw ./$p/"${f}_bat_animation_01".bmp
+./tool/bmp_to_raw ./temp16.raw ./$p/"${f}_bat_animation_02".bmp
+./tool/bmp_to_raw ./temp17.raw ./$p/"${f}_bat_animation_03".bmp
+./tool/bmp_to_raw ./temp18.raw ./$p/"${f}_bat_animation_04".bmp
+./tool/bmp_to_raw ./temp19.raw ./$p/"${f}_bat_animation_05".bmp
+./tool/bmp_to_raw ./temp20.raw ./$p/"${f}_bat_animation_06".bmp
+./tool/bmp_to_raw ./temp21.raw ./$p/"${f}_bat_animation_07".bmp
+./tool/bmp_to_raw ./temp22.raw ./$p/"${f}_bat_animation_08".bmp
+./tool/bmp_to_raw ./temp23.raw ./$p/"${f}_bat_animation_09".bmp
+./tool/bmp_to_raw ./temp24.raw ./$p/"${f}_bat_animation_10".bmp
+./tool/bmp_to_raw ./temp25.raw ./$p/"${f}_bat_10_01".bmp
+./tool/bmp_to_raw ./temp26.raw ./$p/"${f}_bat_10_02".bmp
+./tool/bmp_to_raw ./temp27.raw ./$p/"${f}_bat_10_03".bmp
+./tool/bmp_to_raw ./temp28.raw ./$p/"${f}_bat_10_04".bmp
+./tool/bmp_to_raw ./temp29.raw ./$p/"${f}_bat_10_05".bmp
+./tool/bmp_to_raw ./temp30.raw ./$p/"${f}_bat_10_06".bmp
+./tool/bmp_to_raw ./temp31.raw ./$p/"${f}_bat_10_07".bmp
+./tool/bmp_to_raw ./temp32.raw ./$p/"${f}_bat_10_08".bmp
+./tool/bmp_to_raw ./temp33.raw ./$p/"${f}_bat_10_09".bmp
+./tool/bmp_to_raw ./temp34.raw ./$p/"${f}_bat_10_10".bmp
+./tool/bmp_to_raw ./temp35.raw ./$p/"${f}_bat_bg".bmp
+./tool/bmp_to_raw ./temp36.raw ./$p/"${f}_bat_img".bmp
+./tool/bmp_to_raw ./temp37.raw ./$p/"${f}_bat_100".bmp
+./tool/bmp_to_raw ./temp38.raw ./$p/"${f}_kernel".bmp
+./tool/bmp_to_raw ./temp39.raw ./$p/"${f}_low_battery01".bmp
+./tool/bmp_to_raw ./temp40.raw ./$p/"${f}_low_battery02".bmp
+./tool/bmp_to_raw ./temp41.raw ./$p/"${f}_low_battery_remind".bmp
+./tool/bmp_to_raw ./temp42.raw ./$p/"${f}_fast_charging_100".bmp
+./tool/bmp_to_raw ./temp43.raw ./$p/"${f}_fast_charging_ani-01".bmp
+./tool/bmp_to_raw ./temp44.raw ./$p/"${f}_fast_charging_ani-02".bmp
+./tool/bmp_to_raw ./temp45.raw ./$p/"${f}_fast_charging_ani-03".bmp
+./tool/bmp_to_raw ./temp46.raw ./$p/"${f}_fast_charging_ani-04".bmp
+./tool/bmp_to_raw ./temp47.raw ./$p/"${f}_fast_charging_ani-05".bmp
+./tool/bmp_to_raw ./temp48.raw ./$p/"${f}_fast_charging_ani-06".bmp
+./tool/bmp_to_raw ./temp49.raw ./$p/"${f}_fast_charging_00".bmp
+./tool/bmp_to_raw ./temp50.raw ./$p/"${f}_fast_charging_01".bmp
+./tool/bmp_to_raw ./temp51.raw ./$p/"${f}_fast_charging_02".bmp
+./tool/bmp_to_raw ./temp52.raw ./$p/"${f}_fast_charging_03".bmp
+./tool/bmp_to_raw ./temp53.raw ./$p/"${f}_fast_charging_04".bmp
+./tool/bmp_to_raw ./temp54.raw ./$p/"${f}_fast_charging_05".bmp
+./tool/bmp_to_raw ./temp55.raw ./$p/"${f}_fast_charging_06".bmp
+./tool/bmp_to_raw ./temp56.raw ./$p/"${f}_fast_charging_07".bmp
+./tool/bmp_to_raw ./temp57.raw ./$p/"${f}_fast_charging_08".bmp
+./tool/bmp_to_raw ./temp58.raw ./$p/"${f}_fast_charging_09".bmp
+./tool/bmp_to_raw ./temp59.raw ./$p/"${f}_fast_charging_percent".bmp
+./tool/zpipe -l 9 ./tool/logo.bin temp0.raw temp1.raw temp2.raw temp3.raw temp4.raw temp5.raw temp6.raw temp7.raw temp8.raw temp9.raw temp10.raw temp11.raw temp12.raw temp13.raw temp14.raw temp15.raw temp16.raw temp17.raw temp18.raw temp19.raw temp20.raw temp21.raw temp22.raw temp23.raw temp24.raw temp25.raw temp26.raw temp27.raw temp28.raw temp29.raw temp30.raw temp31.raw temp32.raw temp33.raw temp34.raw temp35.raw temp36.raw temp37.raw temp38.raw temp39.raw temp40.raw temp41.raw temp42.raw temp43.raw temp44.raw temp45.raw temp46.raw temp47.raw temp48.raw temp49.raw temp50.raw temp51.raw temp52.raw temp53.raw temp54.raw temp55.raw temp56.raw temp57.raw temp58.raw temp59.raw
+rm -rf ./temp0.raw ./temp1.raw ./temp2.raw ./temp3.raw ./temp4.raw ./temp5.raw ./temp6.raw ./temp7.raw ./temp8.raw ./temp9.raw ./temp10.raw ./temp11.raw ./temp12.raw ./temp13.raw ./temp14.raw ./temp15.raw ./temp16.raw ./temp17.raw ./temp18.raw ./temp19.raw ./temp20.raw ./temp21.raw ./temp22.raw ./temp23.raw ./temp24.raw ./temp25.raw ./temp26.raw ./temp27.raw ./temp28.raw ./temp29.raw ./temp30.raw ./temp31.raw ./temp32.raw ./temp33.raw ./temp34.raw ./temp35.raw ./temp36.raw ./temp37.raw ./temp38.raw ./temp39.raw ./temp40.raw ./temp41.raw ./temp42.raw ./temp43.raw ./temp44.raw ./temp45.raw ./temp46.raw ./temp47.raw ./temp48.raw ./temp49.raw ./temp50.raw ./temp51.raw ./temp52.raw ./temp53.raw ./temp54.raw ./temp55.raw ./temp56.raw ./temp57.raw ./temp58.raw ./temp59.raw
+./tool/mkimage ./tool/logo.bin ./tool/img_hdr_logo.cfg > tool/logo0.bin
+rm -rf tool/logo.bin
+read -p 'Do you want to sign the logo.bin with Xiaomi certificates? (Only for begonia/begonian) (Y/N) ' sign
+if [ "$sign" = "y" ]; then
+python3 tool/main.py \
+    --cert1 tool/cert1-logo.der \
+    --cert2 tool/cert2-logo.der \
+    --image tool/logo0.bin \
+    --output logo.bin
+rm -rf tool/logo0.bin
+read -p 'Create a flashable zip? (Y/N) ' zip1
+if [ "$zip1" = "y" ]; then
+zip -r signed-bootlogo.zip META-INF logo.bin 
+rm -rf logo.bin
+echo "Signed logo successfully generated! Take your flashable zip in script folder"
+exit
+fi   
+echo "Take your signed logo.bin in script folder"
+exit
+fi
+echo "Generating without signing..."
+cp -r tool/logo0.bin ./
+mv logo0.bin logo.bin
+read -p 'Create a flashable zip? (Y/N) ' zip2
+if [ "$zip2" = "y" ]; then
+zip -r unsigned-bootlogo.zip META-INF logo.bin
+rm -rf logo.bin
+echo "Unsigned logo sucessfully generated! Take your flashable zip in script folder"
+exit
+fi
+echo "Take your unsigned logo.bin in script folder"
+
+
