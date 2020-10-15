@@ -8,28 +8,15 @@ Generating customized logo.bin for Begonia:
 I have already mentioned that even if you change a single image, you get a brick, though you are free to experiment with the script and your device,
 reach out to me if you successfully create a custom one.
 
-Generating stock logo.bin for another device:
-1. Go to gitlab.com/mtk-watch, navigate to proprietary/bootable/bootloader/lk/dev/logo
-2. There will be many folders with name such as xvga, you need to find right name for your device's resolution, for example, fhdplus (Resolution name) is 1080x2160
-(Note: Your device's resolution might not match with any of the specified ones, just use the resolution closest to your device's resolution, like begonia is 1080x2340
-but uses fhdplus)
-3. Download the images and put them in images folder
-4. The images are from MTK and different from the final logo.bin your device uses, for extracting the stock images, you make refer to this tool: https://forum.xda-developers.com/showthread.php?t=1953726
-5. Take the proprietary extracted images and convert them into 32bit BMP A8R8G8B8 format (leave alone the images which look identical to the ones you downloaded)
-6. There will be numbering on the extracted images, for example, img1 = first image in the script (*_uboot.bmp) rename the extracted images accordingly and replace existing ones with them
-7. Now check if your device has extra features like wireless charging and fast charging
-8. In the generate script, set f variable as whatever your resolution is (like wvga) remove the lines which refer to fast charging if your device doesn't support it
-or add wireless charging if it supports wireless charging, make sure you add wireless charging lines after fast charging. changing order can result in a brick. Edit
-further commands accordingly.
-9. Normally run the script and DO NOT sign the logo as the certificates are by Xiaomi for begonia, your device most probably doesn't need certificates or signing.
-
 Generating customized logo.bin for another device:
 1. Follow the same procedure as stock one
-2. Replace the images with whatever you like (Most devices use the *_kernel.bmp as fastboot and *_uboot.bmp as boot splash) make sure you use BMP 32bit A8R8G8B8 format
+2. Replace the images with whatever you like (Most devices use the *_kernel.bmp as fastboot and *_uboot.bmp as boot splash) 
 3. Run the script
 4. Profit or brick
 
-*your device's resolution name
+I understand this script is useless and a total kang, but this is my first repo on github, I put this on there to look back at my retardedness someday.
+
+
 
 
 

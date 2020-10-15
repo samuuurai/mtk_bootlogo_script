@@ -2,6 +2,7 @@
 
 p=images
 f=fhdplus
+if [ "$OSTYPE" = "linux-gnu" ]; then
 ./tool/bmp_to_raw ./temp0.raw ./$p/"${f}_uboot".bmp
 ./tool/bmp_to_raw ./temp1.raw ./$p/"${f}_battery".bmp
 ./tool/bmp_to_raw ./temp2.raw ./$p/"${f}_low_battery".bmp
@@ -63,14 +64,77 @@ f=fhdplus
 ./tool/bmp_to_raw ./temp58.raw ./$p/"${f}_fast_charging_09".bmp
 ./tool/bmp_to_raw ./temp59.raw ./$p/"${f}_fast_charging_percent".bmp
 ./tool/zpipe -l 9 ./tool/logo.bin temp0.raw temp1.raw temp2.raw temp3.raw temp4.raw temp5.raw temp6.raw temp7.raw temp8.raw temp9.raw temp10.raw temp11.raw temp12.raw temp13.raw temp14.raw temp15.raw temp16.raw temp17.raw temp18.raw temp19.raw temp20.raw temp21.raw temp22.raw temp23.raw temp24.raw temp25.raw temp26.raw temp27.raw temp28.raw temp29.raw temp30.raw temp31.raw temp32.raw temp33.raw temp34.raw temp35.raw temp36.raw temp37.raw temp38.raw temp39.raw temp40.raw temp41.raw temp42.raw temp43.raw temp44.raw temp45.raw temp46.raw temp47.raw temp48.raw temp49.raw temp50.raw temp51.raw temp52.raw temp53.raw temp54.raw temp55.raw temp56.raw temp57.raw temp58.raw temp59.raw
+else
+./tool/bmp_to_raw.darwin ./temp0.raw ./$p/"${f}_uboot".bmp
+./tool/bmp_to_raw.darwin ./temp1.raw ./$p/"${f}_battery".bmp
+./tool/bmp_to_raw.darwin ./temp2.raw ./$p/"${f}_low_battery".bmp
+./tool/bmp_to_raw.darwin ./temp3.raw ./$p/"${f}_charger_ov".bmp
+./tool/bmp_to_raw.darwin ./temp4.raw ./$p/"${f}_num_0".bmp
+./tool/bmp_to_raw.darwin ./temp5.raw ./$p/"${f}_num_1".bmp
+./tool/bmp_to_raw.darwin ./temp6.raw ./$p/"${f}_num_2".bmp
+./tool/bmp_to_raw.darwin ./temp7.raw ./$p/"${f}_num_3".bmp
+./tool/bmp_to_raw.darwin ./temp8.raw ./$p/"${f}_num_4".bmp
+./tool/bmp_to_raw.darwin ./temp9.raw ./$p/"${f}_num_5".bmp
+./tool/bmp_to_raw.darwin ./temp10.raw ./$p/"${f}_num_6".bmp
+./tool/bmp_to_raw.darwin ./temp11.raw ./$p/"${f}_num_7".bmp
+./tool/bmp_to_raw.darwin ./temp12.raw ./$p/"${f}_num_8".bmp
+./tool/bmp_to_raw.darwin ./temp13.raw ./$p/"${f}_num_9".bmp
+./tool/bmp_to_raw.darwin ./temp14.raw ./$p/"${f}_num_percent".bmp
+./tool/bmp_to_raw.darwin ./temp15.raw ./$p/"${f}_bat_animation_01".bmp
+./tool/bmp_to_raw.darwin ./temp16.raw ./$p/"${f}_bat_animation_02".bmp
+./tool/bmp_to_raw.darwin ./temp17.raw ./$p/"${f}_bat_animation_03".bmp
+./tool/bmp_to_raw.darwin ./temp18.raw ./$p/"${f}_bat_animation_04".bmp
+./tool/bmp_to_raw.darwin ./temp19.raw ./$p/"${f}_bat_animation_05".bmp
+./tool/bmp_to_raw.darwin ./temp20.raw ./$p/"${f}_bat_animation_06".bmp
+./tool/bmp_to_raw.darwin ./temp21.raw ./$p/"${f}_bat_animation_07".bmp
+./tool/bmp_to_raw.darwin ./temp22.raw ./$p/"${f}_bat_animation_08".bmp
+./tool/bmp_to_raw.darwin ./temp23.raw ./$p/"${f}_bat_animation_09".bmp
+./tool/bmp_to_raw.darwin ./temp24.raw ./$p/"${f}_bat_animation_10".bmp
+./tool/bmp_to_raw.darwin ./temp25.raw ./$p/"${f}_bat_10_01".bmp
+./tool/bmp_to_raw.darwin ./temp26.raw ./$p/"${f}_bat_10_02".bmp
+./tool/bmp_to_raw.darwin ./temp27.raw ./$p/"${f}_bat_10_03".bmp
+./tool/bmp_to_raw.darwin ./temp28.raw ./$p/"${f}_bat_10_04".bmp
+./tool/bmp_to_raw.darwin ./temp29.raw ./$p/"${f}_bat_10_05".bmp
+./tool/bmp_to_raw.darwin ./temp30.raw ./$p/"${f}_bat_10_06".bmp
+./tool/bmp_to_raw.darwin ./temp31.raw ./$p/"${f}_bat_10_07".bmp
+./tool/bmp_to_raw.darwin ./temp32.raw ./$p/"${f}_bat_10_08".bmp
+./tool/bmp_to_raw.darwin ./temp33.raw ./$p/"${f}_bat_10_09".bmp
+./tool/bmp_to_raw.darwin ./temp34.raw ./$p/"${f}_bat_10_10".bmp
+./tool/bmp_to_raw.darwin ./temp35.raw ./$p/"${f}_bat_bg".bmp
+./tool/bmp_to_raw.darwin ./temp36.raw ./$p/"${f}_bat_img".bmp
+./tool/bmp_to_raw.darwin ./temp37.raw ./$p/"${f}_bat_100".bmp
+./tool/bmp_to_raw.darwin ./temp38.raw ./$p/"${f}_kernel".bmp
+./tool/bmp_to_raw.darwin ./temp39.raw ./$p/"${f}_low_battery01".bmp
+./tool/bmp_to_raw.darwin ./temp40.raw ./$p/"${f}_low_battery02".bmp
+./tool/bmp_to_raw.darwin ./temp41.raw ./$p/"${f}_low_battery_remind".bmp
+./tool/bmp_to_raw.darwin ./temp42.raw ./$p/"${f}_fast_charging_100".bmp
+./tool/bmp_to_raw.darwin ./temp43.raw ./$p/"${f}_fast_charging_ani-01".bmp
+./tool/bmp_to_raw.darwin ./temp44.raw ./$p/"${f}_fast_charging_ani-02".bmp
+./tool/bmp_to_raw.darwin ./temp45.raw ./$p/"${f}_fast_charging_ani-03".bmp
+./tool/bmp_to_raw.darwin ./temp46.raw ./$p/"${f}_fast_charging_ani-04".bmp
+./tool/bmp_to_raw.darwin ./temp47.raw ./$p/"${f}_fast_charging_ani-05".bmp
+./tool/bmp_to_raw.darwin ./temp48.raw ./$p/"${f}_fast_charging_ani-06".bmp
+./tool/bmp_to_raw.darwin ./temp49.raw ./$p/"${f}_fast_charging_00".bmp
+./tool/bmp_to_raw.darwin ./temp50.raw ./$p/"${f}_fast_charging_01".bmp
+./tool/bmp_to_raw.darwin ./temp51.raw ./$p/"${f}_fast_charging_02".bmp
+./tool/bmp_to_raw.darwin ./temp52.raw ./$p/"${f}_fast_charging_03".bmp
+./tool/bmp_to_raw.darwin ./temp53.raw ./$p/"${f}_fast_charging_04".bmp
+./tool/bmp_to_raw.darwin ./temp54.raw ./$p/"${f}_fast_charging_05".bmp
+./tool/bmp_to_raw.darwin ./temp55.raw ./$p/"${f}_fast_charging_06".bmp
+./tool/bmp_to_raw.darwin ./temp56.raw ./$p/"${f}_fast_charging_07".bmp
+./tool/bmp_to_raw.darwin ./temp57.raw ./$p/"${f}_fast_charging_08".bmp
+./tool/bmp_to_raw.darwin ./temp58.raw ./$p/"${f}_fast_charging_09".bmp
+./tool/bmp_to_raw.darwin ./temp59.raw ./$p/"${f}_fast_charging_percent".bmp
+./tool/zpipe.darwin -l 9 ./tool/logo.bin temp0.raw temp1.raw temp2.raw temp3.raw temp4.raw temp5.raw temp6.raw temp7.raw temp8.raw temp9.raw temp10.raw temp11.raw temp12.raw temp13.raw temp14.raw temp15.raw temp16.raw temp17.raw temp18.raw temp19.raw temp20.raw temp21.raw temp22.raw temp23.raw temp24.raw temp25.raw temp26.raw temp27.raw temp28.raw temp29.raw temp30.raw temp31.raw temp32.raw temp33.raw temp34.raw temp35.raw temp36.raw temp37.raw temp38.raw temp39.raw temp40.raw temp41.raw temp42.raw temp43.raw temp44.raw temp45.raw temp46.raw temp47.raw temp48.raw temp49.raw temp50.raw temp51.raw temp52.raw temp53.raw temp54.raw temp55.raw temp56.raw temp57.raw temp58.raw temp59.raw
+fi
 rm -rf ./temp0.raw ./temp1.raw ./temp2.raw ./temp3.raw ./temp4.raw ./temp5.raw ./temp6.raw ./temp7.raw ./temp8.raw ./temp9.raw ./temp10.raw ./temp11.raw ./temp12.raw ./temp13.raw ./temp14.raw ./temp15.raw ./temp16.raw ./temp17.raw ./temp18.raw ./temp19.raw ./temp20.raw ./temp21.raw ./temp22.raw ./temp23.raw ./temp24.raw ./temp25.raw ./temp26.raw ./temp27.raw ./temp28.raw ./temp29.raw ./temp30.raw ./temp31.raw ./temp32.raw ./temp33.raw ./temp34.raw ./temp35.raw ./temp36.raw ./temp37.raw ./temp38.raw ./temp39.raw ./temp40.raw ./temp41.raw ./temp42.raw ./temp43.raw ./temp44.raw ./temp45.raw ./temp46.raw ./temp47.raw ./temp48.raw ./temp49.raw ./temp50.raw ./temp51.raw ./temp52.raw ./temp53.raw ./temp54.raw ./temp55.raw ./temp56.raw ./temp57.raw ./temp58.raw ./temp59.raw
-./tool/mkimage ./tool/logo.bin ./tool/img_hdr_logo.cfg > tool/logo0.bin
+./tool/mkimage ./tool/logo.bin ./tool/logo_header.cfg > tool/logo0.bin
 rm -rf tool/logo.bin
 read -p 'Do you want to sign the logo.bin with Xiaomi certificates? (Only for begonia/begonian) (Y/N) ' sign
 if [ "$sign" = "y" ]; then
 python3 tool/main.py \
-    --cert1 tool/cert1-logo.der \
-    --cert2 tool/cert2-logo.der \
+    --cert1 tool/cert1.der \
+    --cert2 tool/cert2.der \
     --image tool/logo0.bin \
     --output logo.bin
 rm -rf tool/logo0.bin
