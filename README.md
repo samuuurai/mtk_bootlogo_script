@@ -8,7 +8,7 @@ The default flashing location for generated flashable zip is **dev/block/platfor
 ## Requirements
 You need Linux or Darwin to run the script, with **python3** and **zip** installed.
 
-If you somehow generate a custom bootlogo for begonia, you can email me or message me on Telegram (@sudokepler)
+If you somehow generate a custom bootlogo for begonia, you can email me or message me on Telegram (@mondaee)
 Read instructions.txt for more information and generating for your device.
 
 **I understand this script is useless and a total kang, but this is my first repo on github, I put this on there to look back at my retardedness someday**
